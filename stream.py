@@ -16,18 +16,19 @@ def predict(m_bb,m_wwbb,jet_1_pt,m_wbb,m_jjj):
 st.title('HIGGS BOSON Predictor')
 st.header('Enter the characteristics of the particle:')
 
-m_bb = st.number_input('m_bb:', min_value=0.001, max_value=10.0, value=1.0)
+m_bb = st.number_input('m_bb:', min_value=0.001, max_value=10.0, value=1.0,key="1")
 
-m_wwbb = st.number_input('m_wwbb:', min_value=0.001, max_value=10.0, value=1.0)
+m_wwbb = st.number_input('m_wwbb:', min_value=0.001, max_value=10.0, value=1.0,key="2")
 
-jet_1_pt = st.number_input('jet_1_pt', min_value=0.001, max_value=10.0, value=1.0)
+jet_1_pt = st.number_input('jet_1_pt', min_value=0.001, max_value=10.0, value=1.0,key="3")
 
-m_wbb = st.number_input('m_wbb', min_value=0.001, max_value=10.0, value=1.0)
+m_wbb = st.number_input('m_wbb', min_value=0.001, max_value=10.0, value=1.0,key="4")
 
-m_wbb = st.number_input('m_wbb', min_value=0.001, max_value=10.0, value=1.0)
+m_wbb = st.number_input('m_wbb', min_value=0.001, max_value=10.0, value=1.0,key="5")
 
 
 if st.button('Predict '):
+
     label = predict(m_bb,m_wwbb,jet_1_pt,m_wbb,m_jjj)
     st.success(f'The predicte value is ${label[0]:.2f}')
 
