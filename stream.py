@@ -24,7 +24,7 @@ jet_1_pt = st.number_input('jet_1_pt', min_value=0.001, max_value=10.0, value=1.
 
 m_wbb = st.number_input('m_wbb', min_value=0.001, max_value=10.0, value=1.0,key="4")
 
-m_wbb = st.number_input('m_wbb', min_value=0.001, max_value=10.0, value=1.0,key="5")
+m_jjj = st.number_input('m_jjj', min_value=0.001, max_value=10.0, value=1.0,key="5")
 
 
 if st.button('Predict '):
