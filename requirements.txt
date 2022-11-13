@@ -1,4 +1,3 @@
-sklearn 
+sklearn>1.0 
 xgboost
 pandas
-streamlit==0.75.0
