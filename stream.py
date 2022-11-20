@@ -5,10 +5,10 @@ import joblib
 
 
 #Loading up the Regression model we created
-# model = xgb.XGBClassifier()
-# model.load_model('xgb_model.json')
+model = xgb.XGBClassifier()
+model.load_model('xgb_model.json')
 
-model = joblib.load("model.pkl")
+# model = joblib.load("model.pkl")
 
 #Caching the model for faster loading
 @st.cache
