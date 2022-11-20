@@ -34,7 +34,7 @@ m_jjj = st.number_input('m_jjj', min_value=0.001, max_value=10.0, value=1.0,key=
 if st.button('Predict '):
 
     label = predict(m_bb,m_wwbb,jet_1_pt,m_wbb,m_jjj)
-    if label[0]>-1:
+    if label[0]>0:
         st.success(f'The predicte value is: High Energy Particle')
     else:
         st.success(f'The predicte value is: Not a High Energy Particle')
