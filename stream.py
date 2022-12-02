@@ -21,7 +21,7 @@ st.title('HIGGS BOSON Predictor')
 st.header('Enter the characteristics of the particle:')
 st.text("The Higgs boson is the fundamental particle associated with the Higgs field, a field that gives mass to other fundamental particles such as electrons and quarks. A particle's mass determines how much it resists changing its speed or position when it encounters a force. Not all fundamental particles have mass.")
 
-m_bb = st.number_input('m_bb:The estimated mass mH of the Higgs boson candidate, obtained through a probabilistic phase space integration.', min_value=0.001, max_value=10.0, value=1.0,key="1",format="%.4f")
+m_bb = st.number_input('m_bb: The estimated mass mH of the Higgs boson candidate, obtained through a probabilistic phase space integration.', min_value=0.001, max_value=10.0, value=1.0,key="1",format="%.4f")
 
 m_wwbb = st.number_input('m_wwbb: Particle mass at the W+-W+-bb final state', min_value=0.001, max_value=10.0, value=1.0,key="2",format="%.4f")
 
