@@ -19,7 +19,7 @@ def predict(m_bb,m_wwbb,jet_1_pt,m_wbb,m_jjj):
 
 st.title('HIGGS BOSON Predictor')
 st.header('Enter the characteristics of the particle:')
-st.body("The Higgs boson is the fundamental particle associated with the Higgs field, a field that gives mass to other fundamental particles such as electrons and quarks. A particle's mass determines how much it resists changing its speed or position when it encounters a force. Not all fundamental particles have mass.")
+st.text("The Higgs boson is the fundamental particle associated with the Higgs field, a field that gives mass to other fundamental particles such as electrons and quarks. A particle's mass determines how much it resists changing its speed or position when it encounters a force. Not all fundamental particles have mass.")
 
 m_bb = st.number_input('m_bb:', min_value=0.001, max_value=10.0, value=1.0,key="1",format="%.4f")
 
